@@ -1,0 +1,24 @@
+<p-panel header="Numbers Pipes" class="p-1">
+  <p>Pipes included in Angular - Usually in the Common Module</p>
+</p-panel>
+
+<div class="grid">
+
+  <div class="col-12 md:col-4">
+    <p-card header="Net Sales" subheader="Of the current year">
+      {{ (totalSells + 1235) | number:'1.2-2' }}
+    </p-card>
+  </div>
+
+  <div class="col-12 md:col-4">
+    <p-card header="Gross Sales" subheader="Of the current year">
+      {{ totalSells | currency:'EUR':'symbol-narrow':'1.4-4' }}
+    </p-card>
+  </div>
+
+  <div class="col-12 md:col-4">
+    <p-card header="Percentage earnings" subheader="Of the current year">
+      {{ percent | percent: '1.2-2' }}
+    </p-card>
+  </div>
+</div>
